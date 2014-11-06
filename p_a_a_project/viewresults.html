@@ -1,0 +1,117 @@
+<?php
+	ini_set('display_errors', 'On');
+error_reporting(E_ALL);
+
+$host="localhost";
+$username="root";
+$password="root";
+$db_name="p_a_project";
+	
+	
+mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
+   mysql_select_db("$db_name")or die("cannot select DB");
+
+$sql = "SELECT * FROM 'job_experience'";
+
+$result = mysql_query($sql);
+
+       if($result){
+           echo "Successful";
+           echo "<BR>";
+           echo "<a href='index.html'>Back to main page</a>";
+       }
+       else
+       {
+           echo "unsuccessfull";
+           echo "<BR>";
+           echo "<a href='index.html'>Back to main page</a>";
+       }
+
+
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"> </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<h1>Professional Accomplishments App View Results</h1>
+<p>Your Resume:</p>
+	<table>
+		<tr>
+			<td>Company Name:</td>
+			<td>
+				alfalfa corp
+			</td>
+		</tr>
+		<tr>
+			<td>Dates:</td>
+			<td>
+				12/20/05 to 12/06/06
+			</td>
+		</tr>
+		<tr>
+			<td>Duties:</td>
+			<td>
+				Barista
+			</td>
+		</tr>
+		<tr>
+			<td>Job Title:</td>
+			<td>
+				gangsta
+			</td>
+		</tr>
+		<tr>
+			<td>notes:</td>
+			<td>
+				boss hated me
+			</td>
+		</tr>
+		<tr>
+			<td>references:</td>
+			<td>
+				delila 301-418-5515
+			</td>
+		</tr>
+		<tr>
+			<td>Pay:</td>
+			<td>
+				$15 per hour
+			</td>
+		</tr>
+		<tr>
+			<td>Company Address:</td>
+			<td>
+				9509 bellhiten ct, yahoo md 24815
+			</td>
+		</tr>
+		<tr>
+			<td>Accomplishments:</td>
+			<td>
+				beat that ass certification
+			</td>
+		</tr>
+		<tr>
+			<td>Company Phone Number:</td>
+			<td>
+				545-9984-554
+			</td>
+		</tr>
+		<tr>
+			<td>Reason for Leaving:</td>
+			<td>
+				throwin salt on mi game
+			</td>
+		</tr>
+		
+	</table>
+	<p>
+		<a href="index.html">Go Back</a>
+	</p>
+</body>
+</html>

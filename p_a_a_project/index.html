@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="script.js"> </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Professional Accomplishments App</h1>
+<p>This is where we will enter information:</p>
+<form class="form-horizontal" action="insert.php" role="form" method="post">
+	<div class="row">
+		<div class="form-group col-lg-6">
+			<div class="input-group">
+				<label class="input-group-addon">Company Name</label>
+				<input type="text" class="form-control" name="company_name">
+			</div>
+		</div>
+		
+		<div class="form-group col-lg-3">
+			<div class="input-group">
+				<div class="input-group-addon">Start Date</div>
+				<input type="text" class="form-control" name="start_date" placeholder="yyyy/mm/dd">
+			</div>
+		</div>
+		<div class="form-group col-lg-3">
+			<div class="input-group">
+				<div class="input-group-addon">End Date</div>
+				<input type="text" class="form-control" name="end_date" placeholder="yyyy/mm/dd">
+			</div>
+		</div>
+	</div><!--end row-->
+	<div class="row">
+		<div class="form-group col-lg-6">
+			<div class="input-group">
+				<div class="input-group-addon">Address</div>
+				<textarea type="text" class="form-control" name="company_address" rows="4"></textarea>
+			</div>
+		</div>
+		<div class="form-group col-lg-4">
+			<div class="input-group">
+				<div class="input-group-addon">Phone #</div>
+				<input type="text" class="form-control" name="company_phone">
+			</div>
+		</div>
+		<div class="form-group col-lg-4">
+			<div class="input-group">
+				<div class="input-group-addon">Job Title</div>
+				<input type="text" class="form-control" name="job_title">
+			</div>
+		</div>
+		<div class="form-group col-lg-2">
+			<div class="input-group">
+				<div class="input-group-addon">Pay</div>
+				<input type="text" class="form-control" name="pay">
+			</div>
+		</div>
+	</div><!--end row-->
+	<div class="form-group">
+		<div class="input-group">
+			<div class="input-group-addon">Duties</div>
+			<textarea type="text" class="form-control" name="duties" rows="6"></textarea>
+		</div>
+	</div>
+	
+	
+	<div class="form-group">
+		<div class="input-group">
+			<div class="input-group-addon">References</div>
+			<textarea type="text" class="form-control" name="references" rows="3"></textarea>
+		</div>
+
+	</div>
+	
+	
+	<div class="form-group">
+		<div class="input-group">
+			<div class="input-group-addon">Accomplishments</div>
+			<textarea type="text" class="form-control" name="accomplishments" rows="3"></textarea>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="input-group">
+			<div class="input-group-addon">Reason for Leaving</div>
+			<input type="text" class="form-control" name="reason_leaving" rows="3">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="input-group">
+			<div class="input-group-addon">Notes</div>
+			<textarea type="text" class="form-control" name="notes" rows="5"></textarea>
+		</div>
+	</div>
+	<div class="row">
+		<button type="submit" class="btn btn-default" value="submit" name="b1">Submit</button>
+		<a class="btn btn-default" href="viewresults.php">View</a>
+	</div>
+</form>
+	
+</div><!--end container-->
+</body>
+</html>
+
